@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Do While e While em JS</title>
+	</head>
+	<body>
+
+	</body>
+</html>
+
+<script type="text/javascript">
+	
+	var contador = 10;
+	
+	//Contando 10-1 com do-while
+	do{
+
+		console.log ("Do While -> " + contador);
+
+		contador--;
+
+	}while (contador > 0);
+
+	//Reiniciando o contador...
+	contador = 10;
+
+	//Contanto 10-1 com while
+	while (contador > 0){
+		
+		console.log ("While -> " + contador);
+
+		contador--;		
+	}
+
+	//Mostrando a diferença entre while e do-while
+	do{
+
+		console.log ("Vai passar uma vez (do-while): " + contador);
+
+		contador--;
+
+	}while (contador = 0);
+
+	//Reiniciando o contador...
+	contador = 10;
+
+	//Contanto 10-1 com while
+	while (contador = 0){
+		
+		console.log ("Nunca vai passar aqui: " + contador);
+
+		contador--;		
+	}	
+
+</script>
