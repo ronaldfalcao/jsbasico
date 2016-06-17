@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tamanho de arrays</title>
+	</head>
+	<body>
+
+	</body>
+</html>
+
+<script type="text/javascript">
+
+	//Formas de declarar o array em JS
+	var sequenciaFibonacci = new Array(1,1,2,3,5,8,13,21);
+	var cores = Array ("Vermelho","Laranja","Azul","Preto", "Branco");
+	var juros = [1.2, 3.7,0.25,2.25,5.67,0.56];
+
+	document.write ("O array Fibonacci tem " + sequenciaFibonacci.length + " elementos.</br>");
+	
+	//Removento elementos do array usando o tamanho deles...
+	sequenciaFibonacci.length = 7; //Remove o último elemento
+	document.write ("O elemento 8 foi removido do array Fibonacci, novo tamanho: " + sequenciaFibonacci.length + " elementos.</br>");
+
+	sequenciaFibonacci.length = 6; //Remove o último elemento
+	document.write ("O elemento 7 foi removido do array Fibonacci, novo tamanho: " + sequenciaFibonacci.length + " elementos.</br>");
+
+	sequenciaFibonacci.length = 5; //Remove o último elemento
+	document.write ("O elemento 6 foi removido do array Fibonacci, novo tamanho: " + sequenciaFibonacci.length + " elementos.</br>");
+
+	sequenciaFibonacci.length = 4; //Remove o último elemento
+	document.write ("O elemento 5 foi removido do array Fibonacci, novo tamanho: " + sequenciaFibonacci.length + " elementos.</br>");
+
+	sequenciaFibonacci.length = 3; //Remove o último elemento
+	document.write ("O elemento 4 foi removido do array Fibonacci, novo tamanho: " + sequenciaFibonacci.length + " elementos.</br>");
+
+	sequenciaFibonacci.length = 2; //Remove o último elemento
+	document.write ("O elemento 3 foi removido do array Fibonacci, novo tamanho: " + sequenciaFibonacci.length + " elementos.</br>");
+
+	sequenciaFibonacci.length = 1; //Remove o último elemento
+	document.write ("O elemento 2 foi removido do array Fibonacci, novo tamanho: " + sequenciaFibonacci.length + " elementos.</br>");
+
+	sequenciaFibonacci.length = 0; //Remove o último elemento
+	document.write ("O elemento 1 foi removido do array Fibonacci, novo tamanho: " + sequenciaFibonacci.length + " elementos.</br>");
+	
+</script>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Arrays em JavaScript</title>
+	</head>
+	<body>
+		<p>Esse código está funcionando :-) olha no console!!!!</p>
+	</body>
+</html>
+
+<script type="text/javascript">
+
+	//Formas de declarar o array em JS
+	var sequenciaFibonacci = new Array(1,1,2,3,5,8,13,21);
+	var cores = Array ("Vermelho","Laranja","Azul","Preto", "Branco");
+	var juros = [1.2, 3.7,0.25,2.25,5.67];
+
+	console.log(sequenciaFibonacci);
+	console.log(juros);
+
+	//Concatenando dois arrays na declaração de variável...
+	var arrayConcatenadoDeclaracao = Array(cores,juros);
+	console.log("Array Concatenado na declaração: " + arrayConcatenadoDeclaracao);	
+
+	//concatenando dois arrays com concat()...
+	var arrayConcatenado = sequenciaFibonacci.concat(juros);
+
+	console.log("Array Concatenado: " + arrayConcatenado);
+	console.log("Array Concatenado: " + sequenciaFibonacci.concat(juros));
+
+	//Listando um array com o operador JOIN, lista o array em formato de string..
+	var lista = cores.join(" ) ( ");//Colocando os valores da lista entre () parênteses.
+	console.log("Cores: ( " + lista + " )");
+
+	//Adicionando elementos no array com o push()...
+	var numerosTriangulares = Array(1,3,6,10,15,21,28);
+	console.log ("Array de números triangulares: " + numerosTriangulares);
+	
+	numerosTriangulares.push(36);
+	console.log ("Array de números triangulares (+36): " + numerosTriangulares);
+	numerosTriangulares.push(45);
+	console.log ("Array de números triangulares (+45): " + numerosTriangulares);
+	numerosTriangulares.push(55);
+	console.log ("Array de números triangulares (+55): " + numerosTriangulares);
+
+	//Removendo o último elemento do array com o pop()...
+	numerosTriangulares.pop();
+	console.log ("Array de números triangulares (-55): " + numerosTriangulares);
+	numerosTriangulares.pop();
+	console.log ("Array de números triangulares (-45): " + numerosTriangulares);
+	numerosTriangulares.pop();
+	console.log ("Array de números triangulares (-36): " + numerosTriangulares);
+
+	//Removendo o primeiro elemento do array com shift()...
+	numerosTriangulares.shift();
+	console.log ("Array de números triangulares (-1): " + numerosTriangulares);
+	numerosTriangulares.shift();
+	console.log ("Array de números triangulares (-3): " + numerosTriangulares);
+	numerosTriangulares.shift();
+	console.log ("Array de números triangulares (-6): " + numerosTriangulares);
+
+</script>
