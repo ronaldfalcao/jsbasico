@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Busca em array com indeof</title>
+	</head>
+	<body>
+
+	</body>
+</html>
+
+<script type="text/javascript">
+	
+	var carros = Array ("Fusca", "Uno", "Chevete", "Kombi", "Fiat 147", "Corcel", "Brasília", "Kombi" ,"Variant");
+
+	//Buscando um elemento do array com indexof...
+	var IndiceRespostaBusca = carros.indexOf("Kombi");
+
+	if (IndiceRespostaBusca === -1){
+		console.log("A busca não retornou nenhum elemento.")
+	}
+	else{
+		console.log("O elemento foi encontrado carros[" + IndiceRespostaBusca +"] = " + carros[IndiceRespostaBusca] );
+	}
+
+
+	//Buscando um elemento do array com indexof e utilizando o index inicial...
+	var IndiceRespostaBusca = carros.indexOf("Kombi",4);
+
+	if (IndiceRespostaBusca === -1){
+		console.log("A busca não retornou nenhum elemento.")
+	}
+	else{
+		console.log("O elemento foi encontrado carros[" + IndiceRespostaBusca +"] = " + carros[IndiceRespostaBusca] );
+	}
+
+	//Buscando um elemento do array com lastindexof...
+	var IndiceRespostaBusca = carros.lastIndexOf("Kombi");
+
+	if (IndiceRespostaBusca === -1){
+		console.log("A busca não retornou nenhum elemento.")
+	}
+	else{
+		console.log("O elemento foi encontrado carros[" + IndiceRespostaBusca +"] = " + carros[IndiceRespostaBusca] );
+	}
+
+	//Buscando um elemento do array com lastindexof com index...
+	var IndiceRespostaBusca = carros.lastIndexOf("Kombi",6);
+
+	if (IndiceRespostaBusca === -1){
+		console.log("A busca não retornou nenhum elemento.")
+	}
+	else{
+		console.log("O elemento foi encontrado carros[" + IndiceRespostaBusca +"] = " + carros[IndiceRespostaBusca] );
+	}
+
+</script>
