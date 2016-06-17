@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Conversão de tipos em JS</title>
+	</head>
+	<body>
+
+	</body>
+</html>
+
+<script type="text/javascript">
+	
+	var euEraUmInteiro = 25;
+
+	console.log ("Variável como inteiro: " + euEraUmInteiro);
+
+	//Convertendo automaticamente e mostrando como uma string
+	euEraUmInteiro = euEraUmInteiro + " agora sou uma string concatenada!";
+	console.log ("Variável como inteiro: " + euEraUmInteiro);
+
+	//Tentando somar uma string com um inteiro
+	console.log ("42" + 13 );//converte o segundo termo para string
+
+	//Fazendo o cálculo acima de forma correta...
+	console.log (parseInt("42") + 13);//converte o primeiro para inteiro
+
+	//Fazendo cálculos com ponto flutuante...
+	console.log(parseInt(4.2) + 13);//Resulta 17 = 4 + 13
+	console.log(parseFloat(4.2) + 13);//Resulta 17 = 4 + 13
+
+	
+</script>
