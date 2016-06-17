@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Funções em JS</title>
+	</head>
+	<body>
+
+	</body>
+</html>
+
+<script type="text/javascript">
+	
+	function AreaQuadrado(primeiroTermo, segundoTermo){
+		return parseInt(primeiroTermo) * parseInt(segundoTermo);
+	}
+
+	//Definindo os lados de um quadrado
+	var ladoA = 2;
+	var ladoB = 4;
+
+	//Invocando a função para calcular a área
+	console.log (AreaQuadrado(ladoA,ladoB));
+
+	var fatorial = function (n){
+		
+		var fat = 1;
+		
+		for (var contador = n; contador >= 1; contador--){
+			fat *= contador;
+		}
+
+		return fat;
+
+	}
+
+	for (var contadorTermos = 0; contadorTermos <= 20; contadorTermos++){
+		console.log("Termo Fatorial [" + contadorTermos + "] -> " + fatorial(contadorTermos));	
+	}
+
+</script>
