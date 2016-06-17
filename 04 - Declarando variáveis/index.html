@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Declarando variáveis em JS</title>
+	</head>
+	<body>
+
+	</body>
+</html>
+
+<script type="text/javascript">
+	
+	//Variáveis globais
+	var primeiroValor = 20;
+
+	//Variáveis locais (bloco)
+	let segundoValor = 30;
+
+	//Exibindo valores Globais
+	console.log ("Valor Global de primeiroValor: " + primeiroValor);
+	console.log ("Total Global de segundoValor: " + segundoValor);
+
+	//Exibindo o resultado no console
+	console.log ("Total Global: " + (primeiroValor + segundoValor));
+
+	//Fazendo o teste dos escopos e declarando a variável segundoValor como local... 
+	if (true){
+		
+		let segundoValor = 10;
+
+		//Exibindo valores locais
+		console.log ("Valor Local de primeiroValor: " + primeiroValor);
+		console.log ("Total Local de segundoValor: " + segundoValor);
+
+		console.log ("Total Local: " + (primeiroValor + segundoValor));
+		
+	}
+
+	//Exibindo valores Globais
+	console.log ("Valor Global de primeiroValor: " + primeiroValor);
+	console.log ("Total Global de segundoValor: " + segundoValor);
+
+
+
+</script>
