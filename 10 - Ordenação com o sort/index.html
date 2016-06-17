@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ordenação de array com sort()</title>
+	</head>
+	<body>
+
+	</body>
+</html>
+
+<script type="text/javascript">
+	
+	var numerosInteiros = Array(5,0,7,2,4,1,9,3,6,8);
+	var alfabeto = Array("J","D","F","B","G","K","E","A","C","H","I");
+
+	console.log ("Array inteiro desordenado: " + numerosInteiros);
+	numerosInteiros.sort();
+	console.log ("Array inteiro ordenado: " + numerosInteiros);
+
+	console.log ("Array alfabeto desordenado: " + alfabeto);
+	alfabeto.sort();
+	console.log ("Array alfabeto ordenado: " + alfabeto);
+
+	//ordenando com callback()...
+	function filtroDecrescente(a,b){
+		if (a > b){
+			return -1;
+		}
+
+		if (a < b){
+			return 1;
+		}
+
+		if(a === b ){
+			return 0;
+		}
+
+	}
+
+	numerosInteiros.sort(filtroDecrescente);
+	console.log ("Array inteiro ordenado (decrescente): " + numerosInteiros);
+
+</script>
