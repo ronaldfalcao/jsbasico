@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Busca dinâmica em um array</title>
+	</head>
+	<body>
+
+		<h1>Fazendo busca dinâmica em um array</h1>
+
+		<input type="text" id="busca">
+		<button onclick="busca()">Buscar</button>
+
+		<div id="exibeResultado" style="background-color:#7FFF00">
+		</div>
+
+	</body>
+</html>
+
+<script type="text/javascript">
+	
+	function busca(){
+		
+		var conteudo = Array("Um dia", "de Sol", "em um lugar", "muito distante", "dos seus olhos");
+		var busca = document.getElementById("busca").value;
+		var testKey = null;
+		var resultado = "";
+
+		for (var key in conteudo){
+			
+			var parcial = conteudo[key].split (" ");
+			
+			for (var keyA in parcial){
+				if (parcial.indexOf(busca) > -1){
+					if (testKey != key){
+						testKey = key;
+						resultado += "<p>" + conteudo[key] + "</p>";
+					}
+				}
+			}
+		}
+
+		document.getElementById("exibeResultado").innerHTML = resultado;
+	}
+	
+</script>
