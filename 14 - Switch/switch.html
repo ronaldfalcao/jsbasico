@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Switch em JS</title>
+	</head>
+	<body>
+		<p>Escolha</p>
+		<select id="listaCores">
+			<option value="vermelho">Vermelho</option>
+			<option value="verde">Verde</option>
+			<option value="amarelo">Amarelo</option>
+			<option value="preto">Preto</option>
+		</select>
+		<button onclick="mostraCodigo()">OK</button>
+	</body>
+</html>
+
+<script type="text/javascript">
+	
+	function mostraCodigo(){
+		
+		var cor = document.getElementById("listaCores").value;
+
+		switch (cor){
+			case "vermelho":
+				console.log("Código Vermelho: #FF0000");
+				break;
+			case "verde":
+				console.log("Código Verde: #00FF00");
+				break;
+			case "amarelo":
+				console.log("Código Amarelo: #FFFF00");
+				break;
+			case "preto":
+				console.log("Código Preto: #000000");
+				break;
+			default:
+				console.log("Código não identificado na base.");
+		}
+	} 
+	
+</script>
